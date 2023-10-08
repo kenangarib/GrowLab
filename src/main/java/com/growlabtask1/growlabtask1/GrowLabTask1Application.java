@@ -9,6 +9,9 @@ public class GrowLabTask1Application {
     public static void main(String[] args) {
         SpringApplication.run(GrowLabTask1Application.class, args);
         System.out.println("Saa");
+        System.out.println("Saa");
+        System.out.println("Saa");
+        System.out.println("Saa");
     }
 
 
