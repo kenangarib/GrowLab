@@ -44,6 +44,7 @@ public class ProductController {
             Product product = productHashMap.get(id);
             return modelMapper.map(product, ResponseDto.class);
         } else System.out.println("Yoxdur");
+
         return null;
     }
 
