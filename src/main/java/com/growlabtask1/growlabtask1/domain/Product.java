@@ -16,5 +16,5 @@ public class Product {
     private String name;
     private BigDecimal price;
     private LocalDate createdDate;
-
+    private LocalDate updatedDate;
 }

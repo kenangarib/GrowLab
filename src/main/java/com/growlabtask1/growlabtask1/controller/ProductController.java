@@ -41,8 +41,8 @@ public class ProductController {
     public ResponseDto getProductById(@PathVariable Long id) {
 
         if (productHashMap.containsKey(id)) {
-            ResponseDto productResponse = modelMapper.map(productHashMap.get(id), ResponseDto.class);
-            return productResponse;
+            Product product = productHashMap.get(id);
+            return modelMapper.map(product, ResponseDto.class);
         } else System.out.println("Yoxdur");
         return null;
     }
