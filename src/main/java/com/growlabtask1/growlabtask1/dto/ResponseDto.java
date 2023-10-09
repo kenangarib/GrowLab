@@ -8,6 +8,7 @@ import java.time.LocalDate;
 @Data
 public class ResponseDto {
 
+    private Long id;
     private String name;
     private BigDecimal price;
     private LocalDate createdDate;

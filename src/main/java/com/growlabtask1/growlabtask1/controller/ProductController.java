@@ -50,7 +50,10 @@ public class ProductController {
 
     @GetMapping
     public List<ResponseDto> getAllProducts() {
-        return new ArrayList<>(productHashMap.values().stream().map(product -> modelMapper.map(product, ResponseDto.class)).collect(Collectors.toList()));
+        return new ArrayList<>(productHashMap.values()
+                .stream()
+                .map(product -> modelMapper.map(product, ResponseDto.class))
+                .collect(Collectors.toList()));
     }
 
     @PutMapping("/updateProduct/{id}")
